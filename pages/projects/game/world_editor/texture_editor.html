@@ -28,9 +28,9 @@
 		</p>
 			
 		<p>
-			Deciding the four textures to choose was done by considering the square region formed from the centers of each square grouping of four alpha/indexing texels.
-			The alpha for all textures used by those four were summed and the textures with lowest average alpha removed from each of the indexing texels.
-			The four alpha texels for the remaining textures were then scaled to equal one.
+			Deciding the four textures to choose was done by considering the square region formed from the corners of each grouping of four adjacent sampling texels.
+			The alpha of all textures used by those four sampling texels were summed and the textures with lowest average alpha removed.
+			The four alpha values for the remaining textures were then scaled to equal one.
 			This removed the possibility of harsh lines appearing due to adjacent texels disagreeing on which set of textures should be sampled from.
 		</p>
 

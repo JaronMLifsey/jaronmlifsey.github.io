@@ -5,16 +5,18 @@
 	<div class="section">
 		<h2 class="section-title">Grass Editing</h2>
         <p>
-            This editor allows for 'painting' grass on the terrain which will apply the grass in greater densities the longer painting was done, up to a point at least.
-            Grass was layed out in a grid with each instance randomly distributed within it's little box.
-            This allowed for consistent results when paining, but prevented an grid-like appearance.
-            The grass was broken up into quadrants and only those in view would be rendered.
+            This editor allows for painting grass on the terrain.
+            This was achieved by creating a grid where each square would have several instances of grass within it.
+			The instanced would be layed out within a smaller sub-grid, but randomly placed within these child squares.
+            The order which instances would appear at grater density levels (from "painting") was also random.
+			This allowed for consistent results when paining, but prevented a grid-like appearance.
+            Grass rendering was optimized by only rendering quadrants in view.
         </p>
 		<p>
             The grass also responds to wind which was implemented as a 2D texture stretched over the map created with multiple sign waves of varying amplitude, frequency, and direction.
 		</p>
 		<p>
-            I had originally wanted to make this editor more versatile, by allowing more than one foliage model per map, but I never got around to that.
+            Allowing for a variety of foliage models was intended, but never implemented.
             The editor, as I left it, allows for selecting only one model per map.
         </p>
 	</div>
